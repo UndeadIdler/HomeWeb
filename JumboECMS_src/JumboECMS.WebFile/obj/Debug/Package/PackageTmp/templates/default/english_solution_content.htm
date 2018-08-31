@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{this.page.Title}</title>
+<meta http-equiv="Content-Language" content="en-us" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta name="keywords" content="{this.page.Keywords}" />
+<meta name="description" content="{this.page.Description}" />
+<script type="text/javascript" src="/_libs/jquery.tools.pack.js"></script>
+<link href="/themes/en/lanmu.css" type="text/css" rel="stylesheet" />
+<link href="/themes/en/css/public.css" type="text/css" rel="stylesheet" />
+<script src="/themes/en/js/all.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="page_style">
+  <div class="menu_box">
+    <div class="menu_box_style1_1">
+      <ul>
+        <li class="menu_box_style1_1_1"><a href="/"><img id="LogoImage" src="/themes/en/images/logo.jpg" style="border-width:0px;" /></a></li>
+        <li class="menu_box_style1_1_2"><img hspace="2" alt="" width="11" height="10" src="/themes/en/images/ico_3.jpg" /><a href="javascript:_jcms_SetHome(this,'{site.Url}')">Set HomePage</a> <img hspace="2" alt="" width="11" height="9" src="/themes/en/images/ico_1.jpg" /><a  href="javascript:_jcms_addFavorite('{this.page.Title}',window.location)">Favorite</a>&nbsp; <img hspace="2" alt="" width="9" height="10" src="/themes/en/images/ico_2.jpg" /><a href="/en/about/contact.html">Contact us</a></li>
+        <li class="clear"></li>
+      </ul>
+    </div>
+    <div class="menu_box_style1_2" id="MainMenu">
+      <ul>
+        <li class="menu_style_1_first" id="Menu_0"><a href='/en/index.html' class="menu_1" target='_self'>Home</a></li>
+<!--~栏目循环~--><jcms:categoryloop parentid="2">
+        <li class="menu_style_1" id="Menu_{$CategoryId}"><a href='{$CategoryLink}' class="menu_1" target='_self'>{$CategoryName}</a></li>
+</jcms:categoryloop>
+      </ul>
+    </div>
+<script type="text/javascript"> 
+$('#Menu_{$TopCategoryId} .menu_1').addClass('menu_current_1');
+</script>
+  </div>
+
+  <div class="banner_box" id="banner_box"><script src="/plus/slide.aspx?id=2" type="text/javascript"></script></div>
+  <div class="lanmu_box_style1" id="sublanmu_style1">
+    <div class="lanmu_box_style1_left" id="sublanmu_style1_left">
+      <!--~栏目循环~--><jcms:categorytree categoryid="{$TopCategoryId}">
+      <div class="nav_box">
+        <div class="nav_title"><span class="nav_sign" >${tree.name}</span></div>
+        <div class="nav_menu">
+          <#if test="${notequals(tree.subchild.count, 0)}">
+          <ul>
+            <#foreach collection="${tree.subchild}" var="category0" index="i">
+            <li id="nav_menu_list${category0.id}" class="nav_menu_list"><a href='${category0.link}' class="nav_menu_href" target="_self">${category0.name}</a>
+            <#if test="${notequals(category0.subchild.count, 0)}">
+            <#if test="${equals(category0.id, {$CurrentCategoryId}) or equals(category0.id, {$ParentCategoryId})}"><ul><#else><ul style="display:none;"><#/if>
+            <#foreach collection="${category0.subchild}" var="category1" index="j">
+            <li id="nav_submenu_list${category1.id}" class="nav_submenu_list"><a href='${category1.link}' class="nav_menu_href" target="_self">${category1.name}</a></li>
+            <#/foreach>
+            </ul>
+            <#/if>
+            </li>
+            <#/foreach>
+          </ul>
+          <#/if>
+        </div>
+      </div>
+      </jcms:categorytree>
+    </div>
+    <div class="lanmu_box_style1_right" id="sublanmu_style1_right">
+      <div class="uc_lanmu_box">
+        <div class="uc_lanmu_site">
+          <ul>
+            <li class="uc_lanmu_site_1">Position：{this.page.Nav}</li>
+            <li class="uc_lanmu_site_2">{$CategoryName}</li>
+          </ul>
+        </div>
+        <div class="uc_lanmu_content">
+          <div  class="articleinfor_title">
+            <h1 title="{$_title}" id="title">{$_title}</h1>
+          </div>
+          <div  class="articleinfor_tishi"> PubTime：{$_adddate}&nbsp;&nbsp;Click：{$_viewnum}&nbsp;&nbsp;【Font:<a href="javascript:FontZoom('16px','32px','Infor_Content')">Big</a> <a href="javascript:FontZoom('14px','28px','Infor_Content')">Middle</a> <a href="javascript:FontZoom('12px','25px','Infor_Content')">Small</a>】 </div>
+          <div id="Infor_Content">
+            {$_content}
+          </div>
+          <br>
+          <ul class="uc_lanmu_pn">
+            <li class="uc_lanmu_prevtitle">Prev:{$_getNeightor(0)}</li>
+            <li class="uc_lanmu_nexttitle">Next:{$_getNeightor(1)}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="clear" id="sublanmu_style1_bottom"></div>
+  </div>
+
+  <div class="bottom_box">
+    <table border="0" cellspacing="1" cellpadding="1" width="100%">
+      <tbody>
+        <tr>
+          <td><a href="/cn/index.html">Chinese</a> | English</td>
+          <td align="right">Copyright &copy;2015 {site.Name2}. All rights reserved.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div align=center>Powered by <a href="http://www.jumboecms.net" target="_blank"><b>JumboECMS</b></a></div>
+</div>
+</body>
+</html>

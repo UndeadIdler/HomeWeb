@@ -1,0 +1,149 @@
+﻿#wrapper
+{
+	padding: 0;
+}
+#wrapper #bd
+{
+	width: 980px;
+}
+#wrapper .bd
+{
+	text-align: left;
+}
+#wrapper .psp-title h2
+{
+	font: normal 20px/18px "Microsoft YaHei";
+	padding: 17px 10px;
+	color: #666;
+}
+#wrapper .psp-wrap
+{
+	background: #fff;
+	min-height: 460px;
+	_height: 460px;
+	padding: 1px;
+}
+#wrapper .psp-container
+{
+	float: left;
+	border-right: 1px solid #eef0ec;
+}
+#wrapper .psp-sidebar
+{
+	float: left;
+}
+.global-footer, .copyright
+{
+	background: none;
+}
+.psp-wrap span.emptyhint
+{
+	line-height: 28px;
+}
+.psp-form .dark-hint
+{
+	display: none;
+}
+.psp-main
+{
+	margin: 55px 0 0 40px;
+}
+.psp-main .psp-form .k
+{
+	width: 80px;
+}
+.psp-main .psp-form .k
+{
+	line-height: 38px;
+}
+.psp-main .psp-form em
+{
+	display: block;
+	padding-left: 84px;
+}
+.psp-main .psp-form .v
+{
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 36px;
+}
+.psp-main .psp-form .v input, .psp-main .psp-form .v lable
+{
+	vertical-align: middle;
+	line-height: 36px;
+	height: 36px;
+}
+.psp-main .psp-form .v .psp-text
+{
+	width: 306px;
+	height: 22px;
+	line-height: 22px;
+	border-top: 1px solid #c4c4c4;
+	border-left: 1px solid #c4c4c4;
+	border-right: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+	vertical-align: middle;
+}
+.psp-main .psp-form select
+{
+	width: 135px;
+	padding: 10px 10px 10px 5px;
+}
+.psp-main .psp-form .c0
+{
+	color: #000;
+}
+.psp-main .psp-form .v .login-width
+{
+	width: 196px;
+}
+.psp-main .psp-form .login-em
+{
+	display: inline-block;
+	padding: 0;
+}
+.psp-main .btn-reg
+{
+	border: none;
+	width: 88px;
+	height: 32px;
+	border: 1px solid #225395;
+	background: #2760AE;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 3px;
+	margin-left: 85px;
+	outline: none;
+}
+.psp-main .btn-reg:active
+{
+	border: 0;
+	outline: none;
+}
+.psp-main .login-tips
+{
+	margin: 65px 0 0 35px;
+	line-height: 20px;
+}
+.psp-main .login-tips dd
+{
+	padding-left: 14px;
+	background: url(images/ico-login-tips.gif) no-repeat 5px center;
+}
+.psp-main .login-tips dd a
+{
+	color: #666;
+}
+.psp-main .wi
+{
+	width: 550px;
+}
+.psp-main .psp-form ul .v input.error
+{
+	border-color: #DD3C10;
+}
+.addinfo-wrapper
+{
+	padding: 80px 0 0 220px;
+}

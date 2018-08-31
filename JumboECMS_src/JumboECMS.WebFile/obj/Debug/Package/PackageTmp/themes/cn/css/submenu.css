@@ -1,0 +1,5 @@
+﻿#MainMenu ul li{position:relative;z-index:2;}
+#MainMenu ul li ul{position:absolute;left:0px;z-index:3;height:20px;padding:5px 5px 0 5px;white-space:nowrap;background-color:#ffffff;display:none;}/*li行样式*/
+#MainMenu ul li ul li{display:inline;text-align:left;}/*li行样式*/
+#MainMenu ul li ul li a{}
+#MainMenu ul li.hover ul{display:block;} 

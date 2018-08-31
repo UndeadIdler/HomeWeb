@@ -1,0 +1,29 @@
+<settings
+	autoResize="true"
+	playerWidth="550"
+	playerHeight="400"
+	previewImage = "/statics/flash/videoPlayer/Evanescence1.jpg"
+	stafImage = "/statics/flash/videoPlayer/Evanescence2.jpg"
+	
+	autoPlay = "true"
+	loop = "false"
+	
+	volume = "75"
+	controlsPadding = "10"
+	keepAspectRatio = "true"
+	
+	showPreviewImage = "true"
+	showShare = "false"
+	showFullScreenButton = "true"
+	showMiddlePlayButton = "true"
+	
+	spaceKeyListener = "true"
+	clickListener = "true"
+	
+	showWatermark = "false"
+	watermarkPath = "/statics/flash/videoPlayer/ratatouilleLogo.png"
+	watermarkLink = "http://www.jumboecms.net"
+	
+	aspectRatio = "4:3"
+	totalTime = "0"
+/>

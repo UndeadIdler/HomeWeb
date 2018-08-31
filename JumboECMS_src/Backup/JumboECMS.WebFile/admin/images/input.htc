@@ -1,0 +1,9 @@
+<public:component> 
+<public:attach event="onfocus" onevent="cr('#c0ddfc')" /> 
+<public:attach event="onblur" onevent="cr('#FFFFFF')" /> 
+<script> 
+function cr(rgb){ 
+     element.runtimeStyle.background=rgb
+} 
+</script> 
+</public:component> 

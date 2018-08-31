@@ -1,0 +1,344 @@
+﻿@import url("common.css");
+	#wrapper {
+	background:#EDF0EB;
+	padding-bottom:0;
+}
+.login-wrap .hd {
+	width:960px;
+	height:130px;
+	margin:0 auto;
+}
+.login-wrap .bd {
+	width:684px;
+	padding:86px 0 142px 274px;
+	background:#fff;
+	margin:0 auto;
+	text-align:left;
+	position:relative;
+}
+.login-wrap .login-con {
+	margin:0 auto;
+}
+.login-wrap .title {
+	font:normal 20px/24px "Microsoft YaHei";
+	margin:0 0 24px 63px;
+}
+.login-wrap .psp-text {
+	width:290px;
+}
+.login-wrap .input-code {
+	width:80px;
+}
+.login-wrap .k {
+	width:60px;
+}
+.login-wrap .checkbox {
+	position:relative;
+	top:-5px;
+	_top:2px;
+	*top:2px;
+}
+.login-wrap .btn-default {
+	border:none;
+	width:126px;
+	height:38px;
+	border:1px solid #dbdbdb;
+	background:#fafafa;
+	color:#ccc;
+	font-weight:bold;
+	border-radius:3px;
+}
+.login-wrap .btn-reg {
+	border:none;
+	width:126px;
+	height:38px;
+	border:1px solid #5f9e20;
+	background:#6db227;
+	color:#fff;
+	font-weight:bold;
+	cursor:pointer;
+	border-radius:3px;
+}
+.login-wrap .right {
+	font-size:12px;
+	margin:0 0 0 16px;
+	line-height:34px;
+	vertical-align:middle;
+}
+.login-wrap .btn {
+	width:305px;
+	padding:11px 0 0 65px;
+	*padding-left:70px;
+	line-height:34px;
+	vertical-align:middle;
+	clear:both;
+	border:none;
+}
+.login-wrap .vcode-img
+{
+	cursor:pointer;
+}
+.login-wrap .ft {
+	height:120px;
+	background:url(images/login-ft-bg.png) repeat 0 0;
+	color:#999;
+	line-height:25px;
+	margin:25px 0 0;
+}
+.login-wrap .ft a {
+	color:#999;
+	margin:0 5px;
+}
+.login-wrap .ft .copyright-url {
+	color:#ccc;
+}
+.login-wrap .ft .weibo_1 {
+	display:inline;
+	padding-left:16px;
+	padding-top:1px;
+	background:url(images/sina.gif) 0 0 no-repeat;
+	zoom:1;
+}
+.login-wrap .ft .weibo_2 {
+	display:inline;
+	padding-left:16px;
+	padding-top:1px;
+	background:url(images/qq.gif) 0 0 no-repeat;
+	zoom:1;
+}
+.active {
+	padding-left:106px;
+	background:url(images/active-inc.gif) no-repeat left top;
+	margin:0 0 0 -15px;
+}
+.active dt {
+	font:bold 20px/26px "Microsoft YaHei";
+	margin-bottom:5px;
+}
+.active dd {
+	font-size:14px;
+	line-height:24px;
+}
+.active .btn {
+	margin:25px 0 35px;
+	padding:0;
+}
+.active-other {
+	padding-left:106px;
+	margin:0 0 0 -10px;
+}
+.active-other dd {
+	line-height:24px;
+	color:#666;
+	padding-left:10px;
+	background:url(images/dot.gif) no-repeat left center;
+}
+.invite-tips {
+	padding:25px 30px;
+	position:absolute;
+	top:0;
+	left:0;
+	width:900px;
+}
+.invite-tips .invite-tips-l {
+	float:left;
+	display:block;
+}
+.invite-tips .invite-tips-r {
+	float:right;
+	display:block;
+}
+.prompt-block {
+	height:100px;
+	background:url(images/prompt-bj.jpg) repeat-x 0 0;
+}
+.prompt-block .main {
+	width:960px;
+	margin:0 auto;
+	font-family:"Microsoft YaHei";
+	overflow:hidden;
+}
+.prompt-block .main .txt {
+	float:left;
+	line-height:100px;
+	font-size:24px;
+}
+.prompt-block .main .txt i {
+	float:left;
+	width:77px;
+	height:70px;
+	background:url(images/ie6.png) no-repeat 0 0;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/passport/css/images/ie6.png',sizingMethod='crop');
+	margin:17px 0 0 18px;
+}
+.prompt-block .main .txt span {
+	float:left;
+}
+.prompt-block .main .IE,.prompt-block .main .chrome {
+	float:right;
+	font-size:16px;
+	color:#5b8c0c;
+	margin-right:10px;
+	display:inline;
+}
+.prompt-block .main .IE i,.prompt-block .main .chrome i {
+	display:block;
+	width:57px;
+	height:56px;
+}
+.prompt-block .IE i {
+	background:url(images/ie8.png) no-repeat 0 0;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/passport/css/images/ie8.png',sizingMethod='crop');
+	margin:10px 0 0 21px;
+	display:inline;
+	_margin-left:15px;
+}
+.prompt-block .chrome i {
+	background:url(images/chrome.png) no-repeat 0 0;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/passport/css/images/chrome.png',sizingMethod='crop');
+	margin:9px 0 0 30px;
+	display:inline;
+	_margin-left:15px;
+}
+.login-wrap .psp-form ul .v {
+	position:relative;
+	left:0;
+	*zoom:1;
+}
+.login-wrap .emptyhint {
+	position:absolute;
+	left:6px;
+	width:200px;
+	float:left;
+	font-size:14px;
+	height:26px;
+	line-height:26px;
+	color:#999;
+}
+.login-wrap .wh {
+	width:154px;
+	height:34px;
+}
+.login-wrap .captcha {
+	vertical-align:middle;
+}
+.login-wrap .captcha-wraper {
+	margin:16px 0 0;
+}
+.login-wrap .mobile-ico {
+	background:url(images/mobile-ico.png) no-repeat left top;
+}
+.login-icon .reg {
+	margin-bottom:15px;
+}
+.login-icon .t {
+	height:23px;
+}
+.login-icon .icon-list {
+	margin-top:5px;
+}
+.login-icon .reg .btn-reg {
+	display:block;
+	height:38px;
+	width:156px;
+	background:url(images/btn-login-reg.png) no-repeat 0 0;
+	text-indent:-9999em;
+	border:0;
+}
+.login-wrap .btn-login {
+	width:98px;
+	height:40px;
+	cursor:pointer;
+	background:#6db227 url(images/btn-login-reg.png) no-repeat 0 -40px;
+	border:0;
+	color:#fff;
+	font-weight:bold;
+	display:inline-block;
+	vertical-align:middle;
+}
+.login-icon .icons {
+	height:30px;
+	width:156px;
+	display:block;
+	margin-bottom:10px;
+	background:url(images/login-third-icons.png) no-repeat;
+}
+.login-icon .icon-sina {
+	background-position:0 0;
+}
+.login-icon .icon-sina:hover {
+	background-position:0 -40px;
+}
+.login-icon .icon-sina:active {
+	background-position:0 -80px;
+}
+.login-icon .icon-tencent {
+	background-position:0 -120px;
+}
+.login-icon .icon-tencent:hover {
+	background-position:0 -160px;
+}
+.login-icon .icon-tencent:active {
+	background-position:0 -200px;
+}
+.login-icon .icon-renren {
+	background-position:0 -240px;
+}
+.login-icon .icon-renren:hover {
+	background-position:0 -280px;
+}
+.login-icon .icon-renren:active {
+	background-position:0 -320px;
+}
+.login-icon .icon-baidu {
+	background-position:0 -360px;
+}
+.login-icon .icon-baidu:hover {
+	background-position:0 -400px;
+}
+.login-icon .icon-baidu:active {
+	background-position:0 -440px;
+}
+.login-icon .icon-kaixin {
+	background-position:0 -480px;
+}
+.login-icon .icon-kaixin:hover {
+	background-position:0 -520px;
+}
+.login-icon .icon-kaixin:active {
+	background-position:0 -560px;
+}
+.psp-form ul .v .psp-text {
+	height:22px;
+}
+.psp-form ul .v .psp-text:focus,.psp-form ul .v .psp-text:active {
+	background:#fffee0;
+}
+.psp-main {
+	margin:58px 0 0 80px;
+}
+.psp-main .psp-container {
+	width:250px;
+}
+.psp-main .psp-sidebar {
+	margin-left:84px;
+	display:inline;
+}
+.login-con .psp-form .c0 {
+	color:#000;
+}
+.login-con .psp-form .v .psp-text {
+	border-top:1px solid #c4c4c4;
+	border-left:1px solid #c4c4c4;
+	border-right:1px solid #ebebeb;
+	border-bottom:1px solid #ebebeb;
+}
+.login-con .psp-form .v .error {
+	border-color:#f25749;
+}
+.global-footer,.copyright {
+	background:none;
+}

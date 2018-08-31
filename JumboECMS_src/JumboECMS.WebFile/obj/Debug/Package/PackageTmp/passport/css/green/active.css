@@ -1,0 +1,104 @@
+﻿#wrapper {
+	padding:0;
+}
+#wrapper #bd {
+	width:980px;
+}
+#wrapper .bd {
+	text-align:left;
+}
+#wrapper .psp-title h2 {
+	font:normal 20px/18px "Microsoft YaHei";
+	padding:17px 10px;
+	color:#666;
+}
+#wrapper .psp-wrap {
+	background:#fff;
+	min-height:460px;
+	_height:460px;
+	padding:1px;
+}
+#wrapper .psp-container {
+	float:left;
+	border-right:1px solid #eef0ec;
+}
+#wrapper .psp-sidebar {
+	float:left;
+}
+.global-footer,.copyright {
+	background:none;
+}
+.psp-wrap span.emptyhint {
+	line-height:28px;
+}
+.psp-form .dark-hint {
+	display:none;
+}
+.psp-main-active {
+	margin:86px 0 0 250px;
+}
+.psp-main-active .active-main {
+	padding-left:108px;
+	background:url(images/active-inc.gif) no-repeat left top;
+	line-height:24px;
+	font-size:14px;
+}
+.psp-main-active .active-main dt {
+	font:normal 20px/18px "Microsoft YaHei";
+	color:#666;
+	margin-bottom:8px;
+}
+.psp-main-active .active-main .btn .btn-t1 {
+	margin:20px 0;
+}
+.psp-main-active .active-other {
+	padding-left:108px;
+}
+.psp-main-active .active-other dt {
+	margin-bottom:5px;
+}
+.psp-main-active .active-other dd {
+	line-height:20px;
+	color:#666;
+	padding-left:10px;
+	background:url(images/dot.gif) no-repeat left center;
+}
+.psp-main-active .mobile {
+	background:url("images/mobile-ico.png") no-repeat scroll left top;
+}
+.psp-main-active .captcha-wraper {
+	height:30px;
+	margin:25px 0 0;
+}
+.psp-main-active .sns-captcha {
+	width:100px;
+	height:22px;
+	line-height:22px;
+	border-top:1px solid #c4c4c4;
+	border-left:1px solid #c4c4c4;
+	border-right:1px solid #ebebeb;
+	border-bottom:1px solid #ebebeb;
+	padding:4px;
+	outline:none;
+}
+.panel-invite {
+	padding:30px 0 30px 80px;
+	font-size:14px;
+}
+.panel-invite li {
+	margin:10px 0;
+}
+.panel-invite li .add-mail {
+	width:200px;
+	height:22px;
+	line-height:22px;
+	border-top:1px solid #c4c4c4;
+	border-left:1px solid #c4c4c4;
+	border-right:1px solid #ebebeb;
+	border-bottom:1px solid #ebebeb;
+	padding:4px;
+	outline:none;
+}
+.panel-invite li .btn-t2 {
+	margin-left:130px;
+}

@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_cn" xml:lang="zh_cn" style="height: 100%; width: 100%;">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{this.page.Title}</title>
+<style type="text/css">
+.cls_container ul{list-style-type:none;margin:0;padding:0;margin-left:32px;}
+.cls_container ul li{height:24px;line-height:24px;width:320px;float:left;display:inline;}
+</style>
+
+    <meta http-equiv="Content-Language" content="zh-CN" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta name="keywords" content="{this.page.Keywords}" />
+    <meta name="description" content="{this.page.Description}" />
+</head>
+<body style="margin: 0px; height: 100%; width: 100%;" onLoad="moveText()">
+    <div style="position: relative; height: 100%; width: 100%;">
+        <embed type="application/x-shockwave-flash" src="04.swf" height="100%" width="100%" wmode="opaque" />
+        </embed>
+<div id="myscroll" class="cls_container">
+<ul>
+<li>热烈庆祝浙江创源环境科技股份有限公司正式挂牌</li>
+<li>公司股票代码：834269</li>
+</ul>
+</div>
+<div id="showhint"></div>
+<script type="text/javascript">
+function $(element){
+if(arguments.length>1){
+for(var i=0,length=arguments.length,elements=[];i<length;i++){
+elements.push($(arguments[i]));
+}
+return elements;
+}
+if(typeof element=="string"){
+return document.getElementById(element);
+}else{
+return element;
+}
+}
+var Class={
+create:function(){
+return function(){
+this.initialize.apply(this,arguments);
+}
+}
+}
+Function.prototype.bind=function(object){
+var method=this;
+return function(){
+method.apply(object,arguments);
+}
+}
+var Scroll=Class.create();
+Scroll.prototype={
+initialize:function(element,height){
+this.element=$(element);
+this.element.innerHTML+=this.element.innerHTML;
+this.height=height;
+this.maxHeight=this.element.scrollHeight/2;
+this.counter=0;
+this.scroll();
+this.timer="";
+this.element.onmouseover=this.stop.bind(this);
+this.element.onmouseout=function(){this.timer=setTimeout(this.scroll.bind(this),1000);}.bind(this);
+},
+scroll:function(){
+if(this.element.scrollTop<this.maxHeight){
+this.element.scrollTop++;
+this.counter++;
+}else{
+this.element.scrollTop=0;
+this.counter=0;
+}
+if(this.counter<this.height){
+this.timer=setTimeout(this.scroll.bind(this),20);
+}else{
+this.counter=0;
+this.timer=setTimeout(this.scroll.bind(this),3000);
+}
+},
+stop:function(){
+clearTimeout(this.timer);
+}
+}
+var myscroll=new Scroll("myscroll",24);
+</script>
+        
+        <button style="position: relative; position: absolute; bottom: 1%; left: 40%; margin: 0 0 0 0; font-size: 2em; background-color: transparent; width:200px;" onclick="javascript:location.href='cn/index.html'"  >进入网站</button>
+    </div>
+    
+</body>
+</html>
+

@@ -1,0 +1,52 @@
+﻿* { margin: 0; padding: 0; list-style: none; font-family: '微软雅黑','黑体',verdana, arial, helvetica, sans-serif;}
+html { height: 100%; overflow: hidden; font-size: 14px; }
+body { height: 100%; overflow: hidden;}
+img { border: none; }
+.show { display:block; }
+.hide { display:none; }
+.clear { clear:both; }
+.floatleft { float:left; }
+.floatright { float:right; }
+/*---------------*/
+.navPoint { color: #FFFFFF; cursor: pointer; font-family: Webdings; font-size: 14px; }
+.STYLE1 { font-size: 14px; color: #FFFFFF; }
+.STYLE2 { font-size: 14px; color: #FF0000; }
+.STYLE3 { font-size: 14px; color: #033d61; }
+.STYLE4 { font-size: 9px; }
+.top { position: absolute; left: 0px; top: 0px; right: 0px; height: 98px; }
+.side { position: absolute; left: 0px; top: 98px; bottom: 30px; width: 232px; overflow: hidden; }
+.main { position: absolute; left: 232px; top: 98px; bottom: 30px; right: 0px; overflow: hidden; }
+.bottom { position: absolute; left: 0px; bottom: 0px; right: 0px; height: 31px; }
+/*----IE6.0*/
+.top { _height: 98px; _margin-top: 0px; _margin-bottom: 0px; _position: relative; _top: 0; _right: 0; _bottom: 0; _left: 0; }
+.side { _height: 100%; _float: left; _width: 232px; _position: relative; _top: 0px; _right: 0; _bottom: 31px; _left: 0; }
+.main { _height: 100%; _margin-left: 232px; _position: relative; _top: 0px; _right: 0; _bottom: 31px; _left: 0; }
+.bottom { _position: relative; _top: -129px; _right: 0; _bottom: 0; _left: 0; _height: 31px; }
+.close-1 { background:url(../images/index-close-1.gif) no-repeat 0 0; width:36px; height:18px; border:none; }
+.close-0 { background:url(../images/index-close-0.gif) no-repeat 0 0; width:36px; height:18px; border:none; }
+
+#coolnav { margin:0px; padding:0px; font-size: 12px;}
+#coolnav td { float:left; width:64px; height:60px;padding-left:16px;}
+#coolnav td.mouseout { background:url(../images/index-nav-mouseout.gif) right no-repeat; font-weight:normal; }
+#coolnav td.mouseover { background:url(../images/index-nav-mouseover.gif) right no-repeat; font-weight:normal; }
+#coolnav td.selected { background:url(../images/index-nav-selected.gif) right no-repeat; font-weight:bold; }
+#coolnav td.blank { width:12px; }
+#coolnav td div { width:64px; height:60px; margin: auto; text-align:center; }
+
+/*左侧导航*/
+#menuDiv { width:231px; overflow:hidden; font-size: 14px; margin: 0px; background:url(../images/index-left-bg.jpg) repeat-y;}
+.menu-box { height:auto; }
+.menu-top-1 { color:#fff; background:url(../images/index-leftmenu.png) -231px 0px no-repeat; line-height:14px; height:14px;}
+.menu-top-0 { color:#fff; background:url(../images/index-leftmenu.png) 0px 0px no-repeat; line-height:14px; height:14px;}
+
+td.menu-title0 { width:100%; text-indent:20px; float:left; text-align:left; cursor:pointer; font-weight:bold; color:#444444; background:url(../images/index-leftmenu.png) 0px -14px no-repeat; line-height:22px; height:22px;}
+td.menu-title1 { width:100%; text-indent:20px; float:left; text-align:left; cursor:pointer; font-weight:bold; color:#444444; background:url(../images/index-leftmenu.png) -231px -14px no-repeat; line-height:22px; height:22px;}
+tr.depth1 td.menu-content1 { width:100%; text-indent:36px; float:left; text-align:left; cursor:pointer; font-weight:normal; color:#444444; background:url(../images/index-leftmenu.png) -231px -36px no-repeat; line-height:22px; height:22px;}
+tr.depth1 td { width:100%; text-indent:36px; float:left; text-align:left; cursor:pointer; font-weight:normal; color:#444444; background:url(../images/index-leftmenu.png) 0px -36px no-repeat; line-height:22px; height:22px;}
+tr.depth2 td.menu-content1 { width:100%; text-indent:48px; float:left; text-align:left; cursor:pointer; font-weight:normal; color:#444444; background:url(../images/index-leftmenu.png) -231px -58px no-repeat; line-height:22px; height:22px;}
+tr.depth2 td { width:100%; text-indent:48px; float:left; text-align:left; cursor:pointer; font-weight:normal; color:#444444; background:url(../images/index-leftmenu.png) 0px -58px no-repeat; line-height:22px; height:22px;}
+tr.depth3 td.menu-content1 { width:100%; text-indent:62px; float:left; text-align:left; cursor:pointer; font-weight:normal; color:#444444; background:url(../images/index-leftmenu.png) -231px -80px no-repeat; line-height:22px; height:22px;}
+tr.depth3 td { width:100%; text-indent:62px; float:left; text-align:left; cursor:pointer; font-weight:normal; color:#444444; background:url(../images/index-leftmenu.png) 0px -80px no-repeat; line-height:22px; height:22px;}
+
+.menu-bottom-1 { color:#fff; background:url(../images/index-leftmenu.png) -231px -102px no-repeat; line-height:14px; height:14px;}
+.menu-bottom-0 { color:#fff; background:url(../images/index-leftmenu.png) 0px -102px no-repeat; line-height:14px; height:14px;}

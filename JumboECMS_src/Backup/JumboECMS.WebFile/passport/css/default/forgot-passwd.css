@@ -1,0 +1,176 @@
+﻿#wrapper {
+	padding:0;
+}
+#wrapper #bd {
+	width:980px;
+}
+#wrapper .bd {
+	text-align:left;
+}
+#wrapper .psp-title h2 {
+	font:normal 20px/18px "Microsoft YaHei";
+	padding:17px 10px;
+	color:#666;
+}
+#wrapper .psp-wrap {
+	background:#fff;
+	min-height:460px;
+	_height:460px;
+	padding:1px;
+}
+#wrapper .psp-container {
+	float:left;
+	border-right:1px solid #eef0ec;
+}
+#wrapper .psp-sidebar {
+	float:left;
+}
+.global-footer,.copyright {
+	background:none;
+}
+.psp-wrap span.emptyhint {
+	line-height:28px;
+}
+.psp-form .dark-hint {
+	display:none;
+}
+.fp-wraper {
+	margin:80px 0 0 315px;
+}
+.psp-main .fp-nav {
+	width:320px;
+	margin-bottom:36px;
+	overflow:hidden;
+}
+.psp-main .fp-nav li {
+	float:left;
+	width:160px;
+	height:30px;
+	line-height:30px;
+	font-size:14px;
+	text-align:center;
+	background:#dbdbdb;
+	cursor:pointer;
+}
+.psp-main .fp-nav li.current {
+	background:#2760AE;
+	color:#fff;
+}
+.psp-main .fp-main .psp-text {
+	width:266px;
+	height:24px;
+	color:#333;
+	margin-right:5px;
+}
+.psp-main .fp-main .k {
+	color:#666;
+}
+.psp-main .captcha {
+	vertical-align:middle;
+}
+.psp-main .next {
+	display:block;
+	width:98px;
+	height:34px;
+	background:url(images/next.gif) no-repeat 0 -37px;
+	margin:27px 0 0 60px;
+	border:none;
+	cursor:pointer;
+}
+.psp-main .validate {
+	padding:40px 0 0 10px;
+}
+.psp-main .validate {
+	font-size:14px;
+}
+.psp-main .validate .toemail {
+	display:block;
+	width:130px;
+	height:34px;
+	background:url(images/toemail.jpg) no-repeat left top;
+	margin:30px 0 0;
+}
+.psp-main .fp-tips {
+	margin:45px 0 0 60px;
+	font-size:12px;
+	line-height:24px;
+}
+.psp-main .passwd-level {
+	color:#999;
+	font-size:12px;
+	padding-left:90px;
+	height:20px;
+	line-height:18px;
+}
+.psp-main .passwd-level dt,.psp-main .passwd-level dd {
+	float:left;
+}
+.psp-main .passwd-level dt {
+	margin-right:4px;
+}
+.psp-main .passwd-level .level {
+	background:url(images/ico_mylife.png) 0 -80px no-repeat;
+	width:180px;
+	height:20px;
+	color:#999;
+	position:relative;
+}
+.psp-main .passwd-level .level span {
+	position:absolute;
+	top:10px;
+	*top:12px;
+	left:26px;
+}
+.psp-main .passwd-level .level-1 {
+	background-position:0 -126px;
+}
+.psp-main .passwd-level .level-1 span {
+	left:26px;
+}
+.psp-main .passwd-level .level-2 {
+	background-position:0 -172px;
+}
+.psp-main .passwd-level .level-2 span {
+	left:85px;
+}
+.psp-main .passwd-level .level-3 {
+	background-position:0 -218px;
+}
+.psp-main .passwd-level .level-3 span {
+	left:146px;
+}
+.psp-main .succeed {
+	height:24px;
+	line-height:24px;
+	background:url(images/succeed.gif) no-repeat 0 0;
+	margin:0 0 20px 88px;
+}
+.psp-main .succeed span {
+	color:#1F4D89;
+	margin-left:35px;
+}
+.psp-main .btn-default-32,.fp-wraper .btn-t1 {
+	height:32px;
+	line-height:20px!important;
+	overflow:hidden;
+}
+.psp-main .btn-t1 {
+	margin-left:88px;
+}
+.psp-main .psp-form .v .psp-text {
+	width:306px;
+	height:22px;
+	line-height:22px;
+	border-top:1px solid #c4c4c4;
+	border-left:1px solid #c4c4c4;
+	border-right:1px solid #ebebeb;
+	border-bottom:1px solid #ebebeb;
+}
+.psp-wrap .Email {
+	margin:50px 0 0;
+	color:#999;
+	text-align:center;
+}
+.psp-main .validate .v .wh {
+	width:200px;
+}

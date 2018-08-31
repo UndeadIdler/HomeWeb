@@ -1,0 +1,169 @@
+﻿#wrapper {
+	padding:0;
+}
+#wrapper #bd {
+	width:980px;
+}
+#wrapper .bd {
+	text-align:left;
+}
+#wrapper .psp-title h2 {
+	font:normal 20px/18px "Microsoft YaHei";
+	padding:17px 10px;
+	color:#666;
+}
+#wrapper .psp-wrap {
+	background:#fff;
+	min-height:460px;
+	_height:460px;
+	padding:1px;
+}
+#wrapper .psp-container {
+	float:left;
+	border-right:1px solid #eef0ec;
+}
+#wrapper .psp-sidebar {
+	float:left;
+}
+.global-footer,.copyright {
+	background:none;
+}
+.psp-wrap span.emptyhint {
+	line-height:28px;
+}
+.psp-form .dark-hint {
+	display:none;
+}
+.psp-main {
+	margin:48px 0 35px 35px;
+}
+.psp-main .psp-form .em-block {
+	display:block;
+	padding-left:95px;
+	font-size:12px;
+	color:#999;
+	line-height:30px;
+}
+.psp-main .psp-form .k {
+	width:90px;
+	line-height:36px;
+}
+.psp-main .psp-form .v {
+	display:inline-block;
+	vertical-align:middle;
+	height:36px;
+	line-height:36px;
+}
+.psp-main .psp-form .v input,.psp-main .psp-form .v lable {
+	vertical-align:middle;
+	line-height:36px;
+	height:36px;
+}
+.psp-main .psp-form .v .psp-text {
+	display:inline-block;
+	width:215px;
+	height:22px;
+	line-height:22px;
+	border-top:1px solid #c4c4c4;
+	border-left:1px solid #c4c4c4;
+	border-right:1px solid #ebebeb;
+	border-bottom:1px solid #ebebeb;
+	vertical-align:top;
+}
+.psp-main .psp-form .v .psp-text:focus {
+	background:#fffee0;
+}
+.psp-main .psp-form select {
+	display:inline-block;
+	width:90px;
+	padding:10px 10px 10px 5px;
+	vertical-align:middle;
+}
+.psp-main .psp-form .v .captcha {
+	width:78px;
+}
+.psp-main .psp-form .captcha-pic {
+	display:inline-block;
+	vertical-align:middle;
+	margin:0 10px;
+}
+.psp-main .btn-reg {
+	border:none;
+	width:88px;
+	height:32px;
+	border:1px solid #5f9e20;
+	background:#6db227;
+	color:#fff;
+	font-weight:bold;
+	cursor:pointer;
+	border-radius:3px;
+	margin-left:95px;
+}
+.psp-main .psp-sidebar {
+	width:340px;
+	padding-left:20px;
+}
+.psp-main .other-list {
+	overflow:hidden;
+	margin:8px 0 0;
+}
+.psp-main .other-list a {
+	display:inline-block;
+	background:url(images/spr-other-signin.gif) no-repeat 0 0;
+	padding:1px 5px 0 20px;
+}
+.psp-main .other-list .sina {
+	background:url(images/spr-other-signin.gif) no-repeat 0 0;
+}
+.psp-main .other-list .tencent {
+	background:url(images/spr-other-signin.gif) no-repeat 0 -44px;
+}
+.psp-main .other-list .renren {
+	background:url(images/spr-other-signin.gif) no-repeat 0 -88px;
+}
+.psp-main .other-list .baidu {
+	background:url(images/spr-other-signin.gif) no-repeat 0 -132px;
+}
+.psp-main .other-list .kaixin {
+	background:url(images/spr-other-signin.gif) no-repeat 0 -176px;
+}
+.psp-main .signin {
+	border:none;
+	color:#fff;
+	font-weight:bold;
+	cursor:pointer;
+	border-radius:3px;
+	font-size:12px;
+	text-align:center;
+}
+.psp-main .show-box {
+	margin:25px 0 0;
+}
+.psp-main .show-main {
+	width:330px;
+	height:275px;
+	background:#edf0eb;
+	margin-top:5px;
+}
+.psp-main .wi {
+	width:565px;
+}
+.psp-main .psp-form .c0 {
+	color:#000;
+}
+.psp-main .psp-form .pl {
+	padding-left:0;
+}
+.psp-main .psp-form .lh {
+	line-height:14px;
+}
+.psp-main .psp-form .fz {
+	font-size:12px;
+}
+.psp-main .psp-form .v .error {
+	border-color:#f25749;
+}
+.psp-wrap .vcode-img
+{
+	cursor:pointer;
+}

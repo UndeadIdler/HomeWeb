@@ -1,0 +1,12 @@
+﻿.jtip { margin:0 auto; padding: 1px; font-size: 12px; opacity: 0.99; filter: alpha(opacity=99); }
+.jtip-inner { width:235px; height:auto; border: 1px solid #2177BF; padding: 10px; background:url(images/jtip-bg.gif) repeat-x; color: #000000; text-align: left; line-height:14px;}
+.jtip-inner strong { color: #0072C1; }
+.jtip-b { background-image: url(images/jtip-b.gif); background-position: top center; }
+.jtip-t { background-image: url(images/jtip-t.gif); background-position: bottom center; }
+.jtip-l { background-image: url(images/jtip-l.gif); background-position: right center; }
+.jtip-r { background-image: url(images/jtip-r.gif); background-position: left center; }
+
+.tip-t { background:url(images/help.gif) no-repeat left top; width:16px; height:16px; padding: 0px; margin:0px; cursor:pointer; border:none; }
+.tip-r { background:url(images/help.gif) no-repeat left top; width:16px; height:16px; padding: 0px; margin:0px; cursor:pointer; border:none; }
+.tip-b { background:url(images/help.gif) no-repeat left top; width:16px; height:16px; padding: 0px; margin:0px; cursor:pointer; border:none; }
+.tip-l { background:url(images/help.gif) no-repeat left top; width:16px; height:16px; padding: 0px; margin:0px; cursor:pointer; border:none; }

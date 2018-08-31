@@ -1,0 +1,36 @@
+﻿#wrapper {
+	padding:0;
+}
+#wrapper #bd {
+	width:980px;
+}
+#wrapper .bd {
+	text-align:left;
+}
+#wrapper .psp-title h2 {
+	font:normal 20px/18px "Microsoft YaHei";
+	padding:17px 10px;
+	color:#666;
+}
+#wrapper .psp-wrap {
+	background:#fff;
+	min-height:460px;
+	_height:460px;
+	padding:1px;
+}
+#wrapper .psp-container {
+	float:left;
+	border-right:1px solid #eef0ec;
+}
+#wrapper .psp-sidebar {
+	float:left;
+}
+.global-footer,.copyright {
+	background:none;
+}
+.psp-wrap span.emptyhint {
+	line-height:28px;
+}
+.psp-form .dark-hint {
+	display:none;
+}

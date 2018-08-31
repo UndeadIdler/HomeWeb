@@ -1,0 +1,28 @@
+﻿/*评论页样式*/
+#comments_box{width:98%;padding:0 0 0 0;margin-left:auto;margin-right:auto;text-align:center;overflow:hidden;}
+#comments_box p{margin:0 0 0 0;line-height:20px;}
+#comments_box a{color:#333333;text-decoration:none;}
+#comments_box a:hover{text-decoration:underline;}
+#comments_box form,select,ul,li,p{list-style-type:none;margin:0 0 0 0;padding:0 0 0 0;}
+#comments_box div{clear:both;}
+#comments_box ul.plitem{border:1px solid #eeeeee;margin:0 0 6px 0;}
+#comments_box ul li{clear:both;padding:0 10px 0 10px;text-align:left;color:#666666;}
+#comments_box ul li p{padding:5px 10px 10px 20px;color:#333333;}
+
+#comments_box .left{float:left}
+#comments_box .right{float:right}
+#comments_box .quote{display:block;border:1px solid #eeeeee;color:#999999;padding:5px 5px 5px 10px;}
+#comments_box .header{padding-top:3px;height:22px;background-color:#EFEFEF}
+
+#comments_box .pllist{margin:0 auto 0 auto;text-align:center;}
+#comments_box .plbox{clear:both;margin:10px auto 10px auto;padding:0 0 10px 0;text-align:center;border:1px solid #dddddd;}
+.comments_bt{width:80px;font-size:9pt;height:22px;cursor:pointer;background-image:url(/template/cn/images/public/button1.gif);background-position: center center;border-top: 0px outset #eeeeee;border-right: 0px outset #888888;border-bottom: 0px outset #888888;border-left: 0px outset #eeeeee;padding-top: 4px;background-repeat: repeat-x;}
+
+
+/*公用表单样式*/
+.tb{border:1px solid #cccccc;border-color:#000000 #cccccc #cccccc #000000;}
+.tb_1{height:18px;width:140px;BORDER-RIGHT:#999999 1px solid; BORDER-TOP:#999999 1px solid; BORDER-LEFT:#999999 1px solid; BORDER-BOTTOM:#999999 1px solid}
+.tb_2{height:18px;border:1px solid #cccccc;border-color:#000000 #cccccc #cccccc #000000;margin:0 0 0 0;padding:0 0 0 0}
+
+.bt{width:55px;font-size:9pt;height:19px;cursor:pointer;background-image:url(/template/cn/images/public/button.gif);background-position: center center;border-top: 0px outset #eeeeee;border-right: 0px outset #888888;border-bottom: 0px outset #888888;border-left: 0px outset #eeeeee;padding-top: 2px;background-repeat: repeat-x;}
+.bt1{height:25px;font-size:9pt;;border:0 solid #666666;border-width:0 1px 1px 0;background-color:#dddddd;padding-top:2px;cursor:pointer;}

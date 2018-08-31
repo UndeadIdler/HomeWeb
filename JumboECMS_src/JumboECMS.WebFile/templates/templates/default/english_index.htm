@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{this.page.Title}</title>
+<meta http-equiv="Content-Language" content="en-us" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta name="keywords" content="{this.page.Keywords}" />
+<meta name="description" content="{this.page.Description}" />
+<script type="text/javascript" src="/_libs/jquery.tools.pack.js"></script>
+<link href="/themes/en/lanmu.css" type="text/css" rel="stylesheet" />
+<link href="/themes/en/css/public.css" type="text/css" rel="stylesheet" />
+<script src="/themes/en/js/all.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="page_style">
+  <div class="menu_box">
+    <div class="menu_box_style1_1">
+      <ul>
+        <li class="menu_box_style1_1_1"><a href="/"><img id="LogoImage" src="/themes/en/images/logo.jpg" style="border-width:0px;" /></a></li>
+        <li class="menu_box_style1_1_2"><img hspace="2" alt="" width="11" height="10" src="/themes/en/images/ico_3.jpg" /><a href="javascript:_jcms_SetHome(this,'{site.Url}')">Set HomePage</a> <img hspace="2" alt="" width="11" height="9" src="/themes/en/images/ico_1.jpg" /><a  href="javascript:_jcms_addFavorite('{this.page.Title}',window.location)">Favorite</a>&nbsp; <img hspace="2" alt="" width="9" height="10" src="/themes/en/images/ico_2.jpg" /><a href="/en/about/contact.html">Contact us</a></li>
+        <li class="clear"></li>
+      </ul>
+    </div>
+    <div class="menu_box_style1_2" id="MainMenu">
+      <ul>
+        <li class="menu_style_1_first" id="Menu_0"><a href='/en/index.html' class="menu_1" target='_self'>Home</a></li>
+<!--~栏目循环~--><jcms:categoryloop parentid="2">
+        <li class="menu_style_1" id="Menu_{$CategoryId}"><a href='{$CategoryLink}' class="menu_1" target='_self'>{$CategoryName}</a></li>
+</jcms:categoryloop>
+      </ul>
+    </div>
+<script type="text/javascript"> 
+$('#Menu_0 .menu_1').addClass('menu_current_1');
+</script>
+  </div>
+  <div class="banner_box" id="banner_box"><script src="/plus/slide.aspx?id=2" type="text/javascript"></script></div>
+  <div class="lanmu_box" id="lanmu_box">
+    <div id="Template_22" class="template_box_layout_left"   style="width:37%;">
+      <div class="template_title_layout_left" ><span class="template_sign" >Company</span><span class="template_more"  style="display:;"><a href="/en/about/index.html">more</a></span></div>
+      <div class="template_box_1_layout_left"  >
+        <div id="Template_Content_22"  class="template_introduct_content" >
+          <p style="text-align: left"><img alt="" hspace="5" align="left" vspace="5" border="0" src="/themes/en/images/gsjj.jpg" /><jcms:categoryloop selectids="34">{$CategoryInfo}</jcms:categoryloop> [<a style="color: #ff0000" href="/en/about/index.html">Detail....</a>]</p>
+        </div>
+      </div>
+    </div>
+    <div id="Template_19" class="template_box_layout_left" style="width:37%;">
+      <div class="template_title_layout_left"  ><span class="template_sign" >Company News</span><span class="template_more"  style="display:;"><a href="/en/news/CompanyNews/index.html"  target="_self">more</a></span></div>
+      <div class="template_box_1_layout_left"  >
+        <div id="Template_Content_19" class="template_list_box"  >
+<jcms:contentloop categoryid="44" isimg="1" repeatnum="1" fields="title,img,isimg,summary">
+<#foreach collection="${contents}" var="field" index="i">
+          <ul class="template_list_tj_box">
+            <li class="template_list_tj_content"><a href="$_{url}" title="$_{title}"   target="_self"><img src="$_{img}" border="0" class="template_list_tj_image" style="display:;width:125px;height:96px;"></a> <a href="$_{url}" title="$_{title}" target="_self" class="template_list_tj_title"  >${cutstring(field.title,30)}</a> <br>
+              ${cutstring(field.summary,190)}</li>
+          </ul>
+<#/foreach>
+</jcms:contentloop>
+
+<jcms:contentloop categoryid="44" isimg="-1" repeatnum="4" fields="title,adddate">
+<#foreach collection="${contents}" var="field" index="i">
+          <ul  class="template_list_title_box">
+            <li class="template_list_title_left"><a href="$_{url}" title="$_{title}"  class="template_list_title"  target="_self">${cutstring(field.title,36)}</a></li>
+            <li class="template_list_title_right"><span>${cdatestring(field.adddate,"dd'/'MM'/'yyyy")}</span></li>
+          </ul>
+<#/foreach>
+</jcms:contentloop>
+        </div>
+      </div>
+    </div>
+    <div id="Template_28" class="template_box_layout_right"   style="width:auto;">
+      <div class="template_title_layout_right" ><span class="template_sign" >Video</span><span class="template_more"  style="display:;"><a href="/en/news/video/index.html">more</a></span></div>
+      <div  class="template_header">
+        <p style="padding-right: 5px; padding-left: 25px; padding-bottom: 0px; padding-top: 0px; text-align: left">
+<jcms:contentloop module="video" repeatnum="1" fields="[title]">
+<#foreach collection="${contents}" var="field" index="i">
+<iframe src="/plus/video_play.aspx?id=${field.id}&NO=0&w=215&h=185&auto=0" width="215" height="185" scrolling="no" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+<#/foreach>
+</jcms:contentloop>
+          <br />
+          <a href="/en/service/feedback.html"><img alt="" vspace="5" border="0" src="/themes/en/images/xxfk.jpg" /></a></p>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div id="Template_20" class="template_box" style="width:100%;">
+      <div class="template_box_1" >
+        <div id="Template_Content_20"  class="template_pic_box" >
+          <table cellSpacing="0" cellPadding="0" align="center" border="0" cellspace="0" width="100%">
+              <tr>
+                <TD vAlign=top id="Template_Content_1_20" width="100%" align="center"><table cellspacing="0" cellpadding="0" align="Center" border="0" border="0" style="width:100%;border-collapse:collapse;">
+              <tr>
+<jcms:contentloop module="product" categoryid="39" repeatnum="6" fields="title,img,isimg">
+<#foreach collection="${contents}" var="field" index="i">
+                <td><ul>
+                    <li  class="template_pic_1"><a href="$_{url}" title="$_{title}"  target="_self"><img src='$_{img}'   border="0" class="template_pic_image"  style="width:155px;height:110px;"></a></li>
+                    <li  class="template_pic_2" style="display:;"><a href="$_{url}" title="$_{title}"  target="_self">${cutstring(field.title,150)}</a></li>
+                    <li class="template_pic_spacing" style="display:none"></li>
+                  </ul></td>
+<#/foreach>
+</jcms:contentloop>
+              </tr>
+          </table>
+          </td>
+          <td vAlign=top id="Template_Content_2_20"  align="center"></TD>
+          </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript"> 
+var TMRoll_20=new PARoll
+(
+{
+speed:30,
+box:"Template_Content_20",
+box1:"Template_Content_1_20",
+box2:"Template_Content_2_20",
+objname:"TMRoll_20",
+width:"",
+height:"",
+direction:"left"
+}
+)
+</script>
+  </div>
+  <div class="bottom_box">
+    <table border="0" cellspacing="1" cellpadding="1" width="100%">
+      <tbody>
+        <tr>
+          <td><a href="/cn/index.html">Chinese</a> | English</td>
+          <td align="right">Copyright &copy;2015 {site.Name2}. All rights reserved.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+</div>
+</body>
+</html>
